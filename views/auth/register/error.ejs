@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Espacio Punto 80</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/building.png" rel="icon">>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/login.css" rel="stylesheet">
+  <link href="assets/login/css/main.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div style="background-color: red;border-radius: 0px;text-align: center;" class="alert">
+        <h5 class="closebtn" onclick="this.parentElement.style.display='none';">&times;</h5>
+        <img style="width: 35px;" src="assets/img/alert.png"> &nbsp; <%= error %>
+        </div>
+
+  <main>
+    <div class="container">
+
+      <section class="section register min-vh-100 d-flex flex-column align-items-center justify-content-center py-4">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div style="margin-bottom: 10%;" class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
+
+              <div class="d-flex justify-content-center py-4">
+                <a style="margin-left: 12%;" class="logo d-flex align-items-center w-auto">
+                  <img data-tilt id="logo" src="assets/img/lsf.png" alt=""> &nbsp;&nbsp;
+                </a>
+              </div><!-- End Logo -->
+
+              <div class="card mb-3">
+
+                <div class="card-body">
+
+                  <div class="pt-4 pb-2">
+                    <h5 class="card-title text-center pb-0 fs-4">Registrarse</h5>
+                    <p class="text-center small">Ingresa tu Usuario & Contraseña para Registrarte</p>
+                  </div>
+                  <br>
+
+                  <form class="row" action="/Register" method="post">
+
+                    <div class="wrap-input100 validate-input" data-validate = "Usuario">
+                      <input required id="pointer" class="input100" type="text" name="usuario" placeholder="Usuario">
+                      <span class="focus-input100"></span>
+                      <span class="symbol-input100">
+                        <img id="icon" src="assets/img/icons/user.png">
+                      </span>
+                    </div>
+
+
+                    <div class="wrap-input100 validate-input" data-validate = "Usuario">
+                      <input required id="pointer" class="input100" type="password" name="clave" placeholder="Contraseña">
+                      <span class="focus-input100"></span>
+                      <span class="symbol-input100">
+                      <img id="icon" src="assets/img/icons/key.png">
+                      </span>
+                    </div>
+
+
+
+                    <div class="col-12">
+                    </div>
+                    <div class="col-12">
+                      <br>
+                      <button class="btn btn-primary w-100" type="submit">Registrarse</button>
+                    </div>
+                    <div class="col-12">
+                      <br>
+                      <p class="small mb-0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ya Tienes Cuenta? 
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a id="reg" href="/">Iniciar Sesion
+                      </a></p>
+                    </div>
+                  </form>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+    </div>
+  </main><!-- End #main -->
+
+
+  <style>
+    .alert {
+      padding: 20px;
+      background-color: #f44336;
+      color: white;
+    }
+    
+    .closebtn {
+      margin-left: 15px;
+      color: white;
+      font-weight: bold;
+      float: right;
+      font-size: 22px;
+      line-height: 20px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    
+    .closebtn:hover {
+      color: dodgerblue;
+    }
+</style>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/chart.js/chart.umd.js"></script>
+  <script src="assets/vendor/echarts/echarts.min.js"></script>
+  <script src="assets/vendor/quill/quill.min.js"></script>
+  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/login/vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script src="assets/login/vendor/tilt/tilt.jquery.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

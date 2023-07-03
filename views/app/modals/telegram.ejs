@@ -1,0 +1,53 @@
+<!-- POR_COBRAR BOT -->
+<div style="background-color: whitesmoke;text-align: center;" data-backdrop="static" class="modal fade" id="telegram" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div style="margin-top: 2.5%;margin-left: 35%;" class="modal-dialog">
+      <img data-tilt style="width: 150px;" src="assets/img/NodeX.png">
+      <form action="/Auth" method="post">
+        <input hidden type="text" name="usuario" value="<%= user %>">
+        <input hidden type="text" name="clave" value="<%= password %>">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img id="icon" src="assets/img/icons/telegram.png"> &nbsp; Telegram</h5>
+          <button style="border: none;outline: none;" type="submit" class="close" data-dismiss="modal" aria-label="Close">
+            <i style="font-size: 20px;" id="close" class="bi bi-x-circle-fill"></i>
+          </button>
+        </form>
+        </div>
+        <div class="modal-body">
+  
+          <form action="/Telegram" method="post">
+          <div class="row justify-content-center">
+              <input hidden type="text" name="usuario" value="<%= user %>">
+              <input hidden type="text" name="clave" value="<%= password %>">
+  
+              <div class="wrap-input100 validate-input" data-validate = "Usuario">
+                <input type="text" class="input100" name="telegram_user" placeholder="Usuario">
+                <span class="focus-input100"></span>
+                <span class="symbol-input100">
+                  <img id="icon" src="assets/img/icons/user.png">
+                </span>
+              </div>
+
+
+              <div class="wrap-input100 validate-input" data-validate = "Usuario">
+                <select name="rol" class="input100">
+                  <option hidden value="">Rol</option>
+                  <option value="Administracion">Administracion</option>
+                  <option value="Taller">Taller</option>
+                </select>
+                <span class="focus-input100"></span>
+                <span class="symbol-input100">
+                  <img id="icon" src="assets/img/icons/dash.png">
+                </span>
+              </div>
+  
+  
+              <button id="btnm" style="width: 55%;margin-top: 5%;" class="btn btn-primary" type="submit">Registrar &nbsp;&nbsp; <i style="font-size: 20px;" class="bi bi-person-plus-fill"></i></button>
+  
+          </div>
+        </form>
+  
+        </div>
+      </div>
+    </div>
+  </div>

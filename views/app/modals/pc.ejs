@@ -1,0 +1,218 @@
+<section id="top2" class="section dashboard">
+    <div class="row justify-content-center">
+
+      <!-- Left side columns -->
+      <div class="col-lg-8">
+        <div class="row justify-content-center">
+
+          <!-- Sales Card -->
+          <div class="col-xxl-10 col-md-6">
+            <div id="radius" data-toggle="modal" data-target="#exampleModal" data-tilt class="card info-card sales-card">
+
+              <div style="text-align: center;" class="card-body">
+                <h5 class="card-title">Por Cobrar <span></span></h5>
+
+                <div style="margin-left: 30%;" class="d-flex align-items-center">
+                  <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                    <img style="width: 50px;" src="assets/img/icons/pc2.png">
+                  </div>
+                  <div class="ps-3">
+                    <h6>$<%= parseInt(por_cobrar).toLocaleString() %></h6>
+                  </div>
+                </div>
+               <p style="text-align: center;"> <span class="text-success small pt-1 fw-bold">%<%= anticipo %></span> <span class="text-muted small pt-2 ps-1">Por Cobrar</span> </p>
+              </div>
+
+            </div>
+          </div><!-- End Sales Card -->
+
+          <!-- Revenue Card -->
+          <div class="col-xxl-5 col-md-6">
+            <div id="radius" data-toggle="modal" data-target="#proyectos" data-tilt class="card info-card sales-card">
+              <div class="card-body">
+                <h5 class="card-title">Proyectos <span></span></h5>
+
+                <div class="d-flex align-items-center">
+                  <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                    <img id="icon" src="assets/img/icons/projects.png">
+                  </div>
+                  <div class="ps-3">
+                    <h6><%= proyectos %></h6>
+
+                  </div>
+                </div>
+                <p style="text-align: center;"> <span class="text-success small pt-1 fw-bold">0%</span> <span class="text-muted small pt-2 ps-1">Pendiente</span> </p>
+              </div>
+
+            </div>
+          </div><!-- End Revenue Card -->
+
+          <br><br>
+
+
+          <!-- Revenue Card -->
+          <div class="col-xxl-5 col-md-6">
+            <div id="radius" data-tilt class="card info-card sales-card">
+
+              <div class="card-body">
+                <h5 class="card-title">En Proceso <span>| Proyectos</span></h5>
+
+                <div class="d-flex align-items-center">
+                  <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                    <img id="icon" src="assets/img/icons/process.png">
+                  </div>
+                  <div class="ps-3">
+                    <h6>0</h6>
+
+                  </div>
+                </div>
+                <p style="text-align: center;"> <span class="text-success small pt-1 fw-bold">0%</span> <span class="text-muted small pt-2 ps-1">Capacidad</span> </p>
+              </div>
+
+            </div>
+          </div><!-- End Revenue Card -->
+
+
+          <!-- Revenue Card -->
+          <div class="col-xxl-5 col-md-6">
+            <div id="radius" data-tilt class="card info-card sales-card">
+
+              <div class="card-body">
+                <h5 class="card-title">Proveedores <span></span></h5>
+
+                <div class="d-flex align-items-center">
+                  <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                    <img id="icon" src="assets/img/icons/pb.png">
+                  </div>
+                  <div class="ps-3">
+                    <h6>0</h6>
+
+                  </div>
+                </div>
+                <p style="text-align: center;"> <span class="text-success small pt-1 fw-bold"></span> <span class="text-muted small pt-2 ps-1"></span> </p>
+              </div>
+
+            </div>
+          </div><!-- End Revenue Card -->
+
+
+          <!-- Revenue Card -->
+          <div class="col-xxl-5 col-md-6">
+            <div id="radius" data-tilt class="card info-card sales-card">
+
+              <div class="card-body">
+                <h5 class="card-title">Materiales <span></span></h5>
+
+                <div class="d-flex align-items-center">
+                  <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                    <img id="icon" src="assets/img/icons/material1.png">
+                  </div>
+                  <div class="ps-3">
+                    <h6>0</h6>
+
+                  </div>
+                </div>
+                <p style="text-align: center;"> <span class="text-success small pt-1 fw-bold"></span> <span class="text-muted small pt-2 ps-1"></span> </p>
+              </div>
+
+            </div>
+          </div><!-- End Revenue Card -->
+
+
+          <!-- Revenue Card -->
+          <div class="col-xxl-5 col-md-6">
+            <div id="radius" data-tilt class="card info-card sales-card">
+
+              <div class="card-body">
+                <h5 class="card-title">Instalaciones <span></span></h5>
+
+                <div class="d-flex align-items-center">
+                  <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                    <img id="icon" src="assets/img/icons/instalacion.png">
+                  </div>
+                  <div class="ps-3">
+                    <h6>0</h6>
+
+                  </div>
+                </div>
+                <p style="text-align: center;"> <span style="color: red;" class="text small pt-1 fw-bold"></span> <span class="text-muted small pt-2 ps-1"></span> </p>
+              </div>
+
+            </div>
+          </div><!-- End Revenue Card -->
+
+
+           <!-- Revenue Card -->
+           <div class="col-xxl-5 col-md-6">
+            <div id="radius" data-tilt class="card info-card sales-card">
+
+              <div class="card-body">
+                <h5 class="card-title">Fabricaciones <span></span></h5>
+
+                <div class="d-flex align-items-center">
+                  <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                    <img id="icon" src="assets/img/icons/fab.png">
+                  </div>
+                  <div class="ps-3">
+                    <h6>0</h6>
+
+                  </div>
+                </div>
+                <p style="text-align: center;"> <span style="color: red;" class="text small pt-1 fw-bold"></span> <span class="text-muted small pt-2 ps-1"></span> </p>
+              </div>
+
+            </div>
+          </div><!-- End Revenue Card -->
+
+
+           <!-- Revenue Card -->
+           <div class="col-xxl-5 col-md-6">
+            <div id="radius" data-tilt class="card info-card sales-card">
+
+              <div class="card-body">
+                <h5 class="card-title">Ganancias <span></span></h5>
+
+                <div class="d-flex align-items-center">
+                  <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                    <img style="width: 50px;" id="icon" src="assets/img/icons/gain1.png">
+                  </div>
+                  <div class="ps-3">
+                    <h6 style="color: green;">$0</h6>
+
+                  </div>
+                </div>
+                <p style="text-align: center;"> <span style="color: red;" class="text small pt-1 fw-bold"></span> <span class="text-muted small pt-2 ps-1"></span> </p>
+              </div>
+
+            </div>
+          </div><!-- End Revenue Card -->
+
+
+           <!-- Revenue Card -->
+           <div class="col-xxl-5 col-md-6">
+            <div id="radius" data-tilt class="card info-card sales-card">
+
+              <div class="card-body">
+                <h5 class="card-title">Perdidas <span></span></h5>
+
+                <div class="d-flex align-items-center">
+                  <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                    <img style="width: 50px;" id="icon" src="assets/img/icons/loss1.png">
+                  </div>
+                  <div class="ps-3">
+                    <h6 style="color: red;">$0</h6>
+
+                  </div>
+                </div>
+                <p style="text-align: center;"> <span style="color: red;" class="text small pt-1 fw-bold"></span> <span class="text-muted small pt-2 ps-1"></span> </p>
+              </div>
+
+            </div>
+          </div><!-- End Revenue Card -->
+
+
+
+        </div>
+      </div><!-- End Left side columns -->       
+      </div>
+      </section>
